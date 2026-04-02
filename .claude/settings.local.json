@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__plugin_context-mode_context-mode__ctx_batch_execute",
+      "Bash(pandoc \"C:\\\\Users\\\\dougc\\\\Downloads\\\\Direito Previdenciário - página geral \\(1\\).docx\" -o /tmp/prev_content.md)",
+      "Bash(python \"C:\\\\Users\\\\dougc\\\\AppData\\\\Roaming\\\\Claude\\\\local-agent-mode-sessions\\\\skills-plugin\\\\938377d9-28fb-43ea-a7b3-de8406506bad\\\\b3580f57-85b7-4273-8086-3a2109699ae9\\\\skills\\\\docx\\\\scripts\\\\office\\\\unpack.py\" \"C:\\\\Users\\\\dougc\\\\Downloads\\\\Direito Previdenciário - página geral \\(1\\).docx\" /tmp/prev_unpacked/)",
+      "mcp__plugin_context-mode_context-mode__ctx_execute_file",
+      "mcp__plugin_context-mode_context-mode__ctx_execute"
+    ]
+  }
+}
