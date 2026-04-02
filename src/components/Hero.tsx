@@ -44,12 +44,12 @@ export default function Hero() {
   return (
     <section
       id="top"
-      className="relative flex min-h-[min(100dvh,920px)] min-w-0 flex-col overflow-hidden pb-0 pt-24 sm:pt-28 md:pt-20"
+      className="relative flex min-h-0 min-w-0 flex-col overflow-hidden pb-0 pt-20 sm:min-h-[min(100dvh,920px)]"
     >
       <HeroBackdrop />
 
       {/* Retrato como camada de “background” à direita — fora do fluxo, pode ocupar muito mais altura */}
-      <div className="pointer-events-none absolute bottom-0 left-1/2 z-[4] h-[min(52vh,460px)] w-[min(92vw,400px)] -translate-x-1/2 sm:h-[min(58vh,520px)] sm:w-[min(88vw,440px)] lg:left-auto lg:right-0 lg:h-[min(98vh,1180px)] lg:w-[min(54vw,960px)] lg:translate-x-0 xl:w-[min(52vw,1000px)]">
+      <div className="pointer-events-none absolute bottom-0 left-1/2 z-[4] hidden -translate-x-1/2 sm:block sm:h-[min(58vh,520px)] sm:w-[min(88vw,440px)] lg:left-auto lg:right-0 lg:h-[min(98vh,1180px)] lg:w-[min(54vw,960px)] lg:translate-x-0 xl:w-[min(52vw,1000px)]">
         <img
           src="/images/paula_matos_hero.png"
           alt="Drª Paula Matos — advocacia previdenciária"
@@ -63,7 +63,7 @@ export default function Hero() {
 
       {/* Degradê sobre o retrato; atrás do texto (z-20) */}
       <div
-        className="pointer-events-none absolute bottom-0 left-1/2 z-[15] h-1/2 min-h-[12rem] w-screen max-w-none -translate-x-1/2"
+        className="pointer-events-none absolute bottom-0 left-1/2 z-[15] hidden h-1/2 min-h-[12rem] w-screen max-w-none -translate-x-1/2 sm:block"
         style={{
           background:
             'linear-gradient(to top, #1b1918 0%, rgba(27, 25, 24, 0.82) 28%, rgba(27, 25, 24, 0.28) 58%, transparent 100%)',
@@ -76,9 +76,9 @@ export default function Hero() {
           initial={{ opacity: 0, y: 28 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.75, ease: 'easeOut' }}
-          className="relative z-30 flex min-w-0 max-w-full flex-col justify-center py-6 sm:py-8 lg:max-w-[65%] lg:py-12 lg:pr-6 xl:py-16"
+          className="relative z-30 flex min-w-0 max-w-full flex-col items-center justify-center py-4 text-center sm:py-8 lg:max-w-[65%] lg:items-start lg:py-12 lg:pr-6 lg:text-left xl:py-16"
         >
-          <div className="mb-6 flex items-center gap-3 sm:mb-8 sm:gap-4" aria-hidden>
+          <div className="mb-4 flex items-center justify-center gap-3 sm:mb-8 sm:gap-4 lg:justify-start" aria-hidden>
             <span className="h-px w-10 bg-gradient-to-r from-transparent via-primary-container/55 to-primary-container sm:w-16 md:w-28" />
             <div className="relative flex h-10 w-10 items-center justify-center sm:h-11 sm:w-11">
               <span className="absolute inset-0 rotate-45 rounded-sm border border-primary-container/35 bg-primary-container/[0.08] shadow-[0_0_28px_rgba(187,152,87,0.18)]" />
@@ -91,37 +91,37 @@ export default function Hero() {
             Coimbra & Ruas · Direito previdenciário
           </p>
 
-          <h1 className="font-serif text-[clamp(1.85rem,6vw+0.75rem,2.35rem)] leading-[1.12] text-surface drop-shadow-[0_4px_48px_rgba(0,0,0,0.35)] sm:text-5xl sm:leading-[1.1] md:text-6xl lg:text-[3.5rem] lg:leading-[1.08]">
+          <h1 className="font-serif text-[clamp(2.05rem,6.5vw+0.85rem,2.85rem)] leading-[1.1] text-surface drop-shadow-[0_4px_48px_rgba(0,0,0,0.35)] sm:text-6xl sm:leading-[1.06] md:text-[3.65rem] md:leading-[1.05] lg:text-[4.15rem] lg:leading-[1.04]">
             Sua aposentadoria é um{' '}
             <span className="italic text-primary-container">patrimônio</span>, não apenas um
             benefício.
           </h1>
 
-          <p className="mt-6 max-w-2xl font-sans text-base leading-relaxed text-surface/78 sm:mt-8 sm:text-lg md:text-xl">
+          <p className="mt-4 max-w-2xl font-sans text-base leading-relaxed text-surface/78 sm:mt-8 sm:text-lg md:text-xl">
             Proteja seu futuro com uma análise técnica rigorosa e personalizada. Buscamos o valor
             máximo permitido por lei, com transparência em cada etapa.
           </p>
 
-          <div className="mt-4 h-px w-20 bg-gradient-to-r from-primary-container/50 to-transparent" aria-hidden />
+          <div className="mx-auto mt-4 h-px w-20 bg-gradient-to-r from-primary-container/50 to-transparent lg:mx-0" aria-hidden />
 
-          <div className="mt-8 inline-flex max-w-full items-center gap-2 rounded-full border border-primary-container/30 bg-primary-container/[0.08] px-4 py-2 backdrop-blur-sm">
-            <span className="relative flex h-2 w-2 shrink-0">
-              <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-primary-container opacity-75" />
-              <span className="relative inline-flex h-2 w-2 rounded-full bg-primary-container" />
-            </span>
-            <span className="font-sans text-xs font-medium text-primary-container/95 sm:text-sm">
-              Vagas limitadas para análise gratuita este mês
-            </span>
-          </div>
+          <div className="mt-8 inline-flex w-fit items-center gap-3 rounded-full border border-primary-container/30 bg-primary-container/[0.08] px-5 py-2.5 backdrop-blur-sm">
+              <span className="relative flex h-2.5 w-2.5 shrink-0">
+                <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-primary-container opacity-75" />
+                <span className="relative inline-flex h-2.5 w-2.5 rounded-full bg-primary-container" />
+              </span>
+              <span className="font-sans text-sm font-medium text-primary-container/95 sm:text-base">
+                Vagas limitadas para análise gratuita este mês
+              </span>
+            </div>
 
-          <div className="mt-10 flex flex-col gap-4 sm:mt-12 sm:flex-row sm:flex-wrap sm:items-center">
+          <div className="mt-6 flex w-full flex-col gap-4 sm:mt-12 sm:w-auto sm:flex-row sm:flex-wrap sm:items-center">
             <motion.a
               href={CONTACT_WHATSAPP_HREF}
               target="_blank"
               rel="noopener noreferrer"
               whileHover={{ scale: 1.03 }}
               whileTap={{ scale: 0.98 }}
-              className="btn-animated-gradient inline-flex items-center justify-center rounded-sm px-8 py-4 text-center text-sm font-bold uppercase tracking-wide shadow-xl sm:min-w-[240px] sm:text-base"
+              className="btn-animated-gradient inline-flex w-full items-center justify-center rounded-sm px-8 py-4 text-center text-sm font-bold uppercase tracking-wide shadow-xl sm:w-auto sm:min-w-[240px] sm:text-base"
             >
               Analisar meu caso agora
             </motion.a>
@@ -131,7 +131,7 @@ export default function Hero() {
               rel="noopener noreferrer"
               whileHover={{ scale: 1.03 }}
               whileTap={{ scale: 0.98 }}
-              className="inline-flex items-center justify-center gap-3 rounded-sm border border-primary-container/40 bg-inverse-surface/55 px-8 py-4 text-center text-sm font-bold uppercase tracking-wide text-surface shadow-[inset_0_1px_0_rgba(255,255,255,0.06)] backdrop-blur-md transition-colors hover:border-primary-container/55 hover:bg-inverse-surface/75 sm:min-w-[240px] sm:text-base"
+              className="inline-flex w-full items-center justify-center gap-3 rounded-sm border border-primary-container/40 bg-inverse-surface/55 px-8 py-4 text-center text-sm font-bold uppercase tracking-wide text-surface shadow-[inset_0_1px_0_rgba(255,255,255,0.06)] backdrop-blur-md transition-colors hover:border-primary-container/55 hover:bg-inverse-surface/75 sm:w-auto sm:min-w-[240px] sm:text-base"
             >
               <span className="inline-flex shrink-0" aria-hidden>
                 <FaWhatsapp size={22} />

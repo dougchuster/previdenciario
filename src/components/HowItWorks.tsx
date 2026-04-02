@@ -106,7 +106,7 @@ export default function HowItWorks() {
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: idx * 0.08 }}
                 whileHover={{ y: -3 }}
-                className="relative flex min-w-0 flex-1 flex-col rounded-2xl border border-outline-variant/40 bg-surface-container-low/80 p-6 shadow-md ring-1 ring-black/[0.04] backdrop-blur-sm transition-[box-shadow,transform] sm:p-7"
+                className="relative flex min-w-0 flex-1 flex-col items-center rounded-2xl border border-outline-variant/40 bg-surface-container-low/80 p-6 text-center shadow-md ring-1 ring-black/[0.04] backdrop-blur-sm transition-[box-shadow,transform] sm:items-start sm:p-7 sm:text-left"
               >
                 <span className="mb-4 inline-flex w-fit rounded-md border border-primary-container/30 bg-primary-container/[0.1] px-2.5 py-1 font-sans text-xs font-semibold tracking-widest text-primary">
                   {item.step}
@@ -114,7 +114,7 @@ export default function HowItWorks() {
                 <div className="mb-4 text-primary-container">
                   <item.icon className="h-10 w-10" strokeWidth={1.35} aria-hidden />
                 </div>
-                <h3 className="mb-3 font-serif text-xl text-on-surface">{item.title}</h3>
+                <h3 className="mb-3 font-serif text-2xl text-on-surface sm:text-xl">{item.title}</h3>
                 <p className="font-sans text-sm leading-relaxed text-on-surface-variant md:text-[0.9375rem]">
                   {item.description}
                 </p>

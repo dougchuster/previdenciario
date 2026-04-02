@@ -99,7 +99,7 @@ export default function Specialties() {
       />
       <div className="relative z-[2] mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="mb-12 text-center sm:mb-16">
-          <h2 className="mb-4 font-serif text-3xl text-white sm:text-4xl">
+          <h2 className="mb-4 font-serif text-4xl text-white sm:text-5xl md:text-[2.85rem] md:leading-tight">
             Especialidades <span className="italic text-primary-container">Previdenciárias</span>
           </h2>
           <div className="mx-auto h-px w-24 bg-primary-container/90" />

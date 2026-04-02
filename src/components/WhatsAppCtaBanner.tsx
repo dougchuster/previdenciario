@@ -21,7 +21,7 @@ export default function WhatsAppCtaBanner() {
             <FaWhatsapp size={40} color="#ffffff" aria-hidden />
           </div>
           <div className="min-w-0 text-center sm:text-left">
-            <h3 className="text-balance font-serif text-xl font-bold leading-[1.2] text-[#1b1918] sm:text-2xl sm:leading-[1.2] md:text-3xl md:leading-tight">
+            <h3 className="text-balance font-serif text-2xl font-bold leading-[1.2] text-[#1b1918] sm:text-2xl sm:leading-[1.2] md:text-3xl md:leading-tight">
               Entre em contato com um advogado especialista
             </h3>
             <p className="mt-3 font-sans text-base leading-relaxed text-white/95 md:mt-4 md:text-lg">

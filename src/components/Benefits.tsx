@@ -122,7 +122,7 @@ export default function Benefits() {
                 viewport={{ once: true }}
                 whileHover={{ y: -4 }}
                 transition={{ duration: 0.55, delay: idx * 0.1 }}
-                className="relative flex min-w-0 flex-1 flex-col rounded-2xl border border-primary-container/35 bg-[#2a2623]/85 p-6 shadow-[0_20px_56px_-12px_rgba(187,152,87,0.14),0_8px_32px_-8px_rgba(0,0,0,0.4),inset_0_1px_0_rgba(255,255,255,0.04)] ring-1 ring-white/[0.08] backdrop-blur-[2px] transition-[transform,box-shadow] duration-300 hover:shadow-[0_24px_64px_-10px_rgba(187,152,87,0.18),0_10px_36px_-8px_rgba(0,0,0,0.45),inset_0_1px_0_rgba(255,255,255,0.05)] sm:p-8"
+                className="relative flex min-w-0 flex-1 flex-col items-center rounded-2xl border border-primary-container/35 bg-[#2a2623]/85 p-6 text-center shadow-[0_20px_56px_-12px_rgba(187,152,87,0.14),0_8px_32px_-8px_rgba(0,0,0,0.4),inset_0_1px_0_rgba(255,255,255,0.04)] ring-1 ring-white/[0.08] backdrop-blur-[2px] transition-[transform,box-shadow] duration-300 hover:shadow-[0_24px_64px_-10px_rgba(187,152,87,0.18),0_10px_36px_-8px_rgba(0,0,0,0.45),inset_0_1px_0_rgba(255,255,255,0.05)] sm:items-start sm:p-8 sm:text-left"
               >
                 <div
                   className="pointer-events-none absolute inset-0 rounded-2xl"
@@ -138,7 +138,7 @@ export default function Benefits() {
                 <div className="relative mb-4 inline-block scale-105 text-primary-container">
                   <benefit.icon className="h-12 w-12" strokeWidth={1.25} />
                 </div>
-                <h3 className="relative mb-3 font-serif text-xl text-white">{benefit.title}</h3>
+                <h3 className="relative mb-3 font-serif text-2xl text-white sm:text-xl">{benefit.title}</h3>
                 <p className="relative text-sm font-sans leading-relaxed text-surface/70">
                   {benefit.description}
                 </p>

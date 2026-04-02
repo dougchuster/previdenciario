@@ -6,6 +6,10 @@ import { CONTACT_WHATSAPP_HREF } from '@/src/contact';
 
 /** Imagem da seção — arquivo em `public/images/uploads/aposentadoinss.webp`. */
 const PAINPOINTS_IMAGE_SRC = '/images/uploads/aposentadoinss.webp';
+/** Segunda imagem — `public/images/uploads/aposentado2.webp`. */
+const PAINPOINTS_IMAGE_SECOND_SRC = '/images/uploads/aposentado2.webp';
+/** Terceira imagem — `public/images/uploads/aposentado3.webp`. */
+const PAINPOINTS_IMAGE_THIRD_SRC = '/images/uploads/aposentado3.webp';
 
 /** Palavras-chave em vermelho */
 const accentRed = 'font-semibold text-[#b91c1c]';
@@ -107,24 +111,33 @@ function PainPointsImage() {
             </code>
           </p>
         </div>
-        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:flex-none">
-          {Array.from({ length: 2 }).map((_, idx) => (
+        <div className="grid grid-cols-2 gap-4 lg:flex-none">
+          <figure className="group relative min-h-[160px] overflow-hidden rounded-2xl shadow-[0_12px_32px_-20px_rgba(27,28,26,0.18)] ring-1 ring-black/[0.06]">
+            <img
+              src={PAINPOINTS_IMAGE_SECOND_SRC}
+              alt="Aposentadoria e planejamento previdenciário"
+              className="h-full min-h-[160px] w-full object-cover transition duration-500 group-hover:scale-[1.02]"
+              loading="lazy"
+              decoding="async"
+            />
             <div
-              key={idx}
-              className="flex min-h-[160px] items-center justify-center rounded-2xl border-2 border-dashed border-primary-container/25 bg-gradient-to-br from-surface-container-high/70 to-surface-container-low/90 px-4 py-8 text-center"
-            >
-              <div className="space-y-2">
-                <ImageIcon
-                  className="mx-auto h-8 w-8 text-primary-container/45"
-                  strokeWidth={1.25}
-                  aria-hidden
-                />
-                <p className="font-sans text-xs uppercase tracking-[0.18em] text-on-surface-variant/70">
-                  Espaço para imagem {idx + 2}
-                </p>
-              </div>
-            </div>
-          ))}
+              className="pointer-events-none absolute inset-0 bg-gradient-to-t from-inverse-surface/15 via-transparent to-transparent opacity-70"
+              aria-hidden
+            />
+          </figure>
+          <figure className="group relative min-h-[160px] overflow-hidden rounded-2xl shadow-[0_12px_32px_-20px_rgba(27,28,26,0.18)] ring-1 ring-black/[0.06]">
+            <img
+              src={PAINPOINTS_IMAGE_THIRD_SRC}
+              alt="Benefícios previdenciários e orientação especializada"
+              className="h-full min-h-[160px] w-full object-cover transition duration-500 group-hover:scale-[1.02]"
+              loading="lazy"
+              decoding="async"
+            />
+            <div
+              className="pointer-events-none absolute inset-0 bg-gradient-to-t from-inverse-surface/15 via-transparent to-transparent opacity-70"
+              aria-hidden
+            />
+          </figure>
         </div>
       </div>
     );
@@ -147,24 +160,33 @@ function PainPointsImage() {
         />
       </figure>
 
-      <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:flex-none">
-        {Array.from({ length: 2 }).map((_, idx) => (
+      <div className="grid grid-cols-2 gap-4 lg:flex-none">
+        <figure className="group relative min-h-[160px] overflow-hidden rounded-2xl shadow-[0_12px_32px_-20px_rgba(27,28,26,0.18)] ring-1 ring-black/[0.06]">
+          <img
+            src={PAINPOINTS_IMAGE_SECOND_SRC}
+            alt="Aposentadoria e planejamento previdenciário"
+            className="h-full min-h-[160px] w-full object-cover transition duration-500 group-hover:scale-[1.02]"
+            loading="lazy"
+            decoding="async"
+          />
           <div
-            key={idx}
-            className="flex min-h-[160px] items-center justify-center rounded-2xl border border-outline-variant/45 bg-surface-container-low/70 shadow-[0_12px_32px_-20px_rgba(27,28,26,0.18)] ring-1 ring-black/[0.03] backdrop-blur-sm"
-          >
-            <div className="space-y-2 text-center">
-              <ImageIcon
-                className="mx-auto h-8 w-8 text-primary-container/50"
-                strokeWidth={1.25}
-                aria-hidden
-              />
-              <p className="font-sans text-xs uppercase tracking-[0.18em] text-on-surface-variant/70">
-                Espaço para imagem {idx + 2}
-              </p>
-            </div>
-          </div>
-        ))}
+            className="pointer-events-none absolute inset-0 bg-gradient-to-t from-inverse-surface/15 via-transparent to-transparent opacity-70"
+            aria-hidden
+          />
+        </figure>
+        <figure className="group relative min-h-[160px] overflow-hidden rounded-2xl shadow-[0_12px_32px_-20px_rgba(27,28,26,0.18)] ring-1 ring-black/[0.06]">
+          <img
+            src={PAINPOINTS_IMAGE_THIRD_SRC}
+            alt="Benefícios previdenciários e orientação especializada"
+            className="h-full min-h-[160px] w-full object-cover transition duration-500 group-hover:scale-[1.02]"
+            loading="lazy"
+            decoding="async"
+          />
+          <div
+            className="pointer-events-none absolute inset-0 bg-gradient-to-t from-inverse-surface/15 via-transparent to-transparent opacity-70"
+            aria-hidden
+          />
+        </figure>
       </div>
     </div>
   );
@@ -211,7 +233,7 @@ function ClosingHeadline() {
       transition={{ duration: 0.5 }}
       className="mx-auto w-full max-w-4xl px-2 text-center"
     >
-      <p className="font-serif text-2xl leading-[1.25] text-on-surface sm:text-3xl md:text-4xl md:leading-[1.2] lg:text-[2.75rem] lg:leading-[1.15]">
+      <p className="font-serif text-3xl leading-[1.25] text-on-surface sm:text-3xl md:text-4xl md:leading-[1.2] lg:text-[2.75rem] lg:leading-[1.15]">
         <span className="block">Se alguma resposta for sim,</span>
         <span className="mt-2 block font-semibold italic text-primary-container drop-shadow-[0_2px_24px_rgba(187,152,87,0.2)] md:mt-3">
           você não está sozinho.
@@ -314,7 +336,7 @@ export default function PainPoints() {
           transition={{ duration: 0.5 }}
           className="mb-10 max-w-3xl md:mb-12"
         >
-          <h2 className="font-serif text-3xl leading-tight text-on-surface md:text-4xl lg:text-[2.5rem]">
+          <h2 className="font-serif text-4xl leading-tight text-on-surface md:text-5xl lg:text-[3.15rem] lg:leading-[1.12]">
             Você se identifica com algum destes{' '}
             <span className="italic text-primary-container">desafios?</span>
           </h2>

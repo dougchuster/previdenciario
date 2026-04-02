@@ -4,7 +4,7 @@ export default function About() {
   return (
     <section
       id="about"
-      className="relative overflow-hidden bg-surface bg-premium-noise pb-28 pt-36 md:pb-32 md:pt-44"
+      className="relative overflow-hidden bg-surface bg-premium-noise pb-16 pt-20 md:pb-32 md:pt-44"
     >
       <div
         className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_90%_60%_at_50%_0%,rgba(187,152,87,0.07),transparent_55%)]"
@@ -54,7 +54,7 @@ export default function About() {
             <span className="mb-3 block font-sans text-[11px] font-semibold uppercase tracking-[0.28em] text-primary-container">
               A especialista
             </span>
-            <h2 className="font-serif text-4xl leading-[1.12] text-on-surface md:text-5xl">
+            <h2 className="font-serif text-5xl leading-[1.1] text-on-surface md:text-6xl md:leading-[1.08]">
               Dra. Paula Matos
             </h2>
             <div className="mt-5 flex items-center gap-3">
@@ -67,7 +67,7 @@ export default function About() {
               segura.
             </blockquote>
 
-            <div className="mt-8 max-w-xl space-y-5 text-base leading-relaxed text-on-surface-variant font-sans md:text-lg">
+            <div className="mt-8 max-w-xl space-y-5 text-left text-base leading-relaxed text-on-surface-variant font-sans md:text-lg">
               <p>
                 Com vasta experiência em contencioso administrativo e judicial, a Dra. Paula Matos
                 lidera o Coimbra & Ruas com um foco inegociável no atendimento humanizado. Cada
@@ -83,7 +83,7 @@ export default function About() {
             <div className="mt-12 flex flex-col items-stretch gap-0 overflow-hidden rounded-lg border border-outline-variant/40 bg-surface-container-low/60 shadow-sm backdrop-blur-sm sm:flex-row sm:px-2 sm:py-6">
               <div className="flex flex-col items-center justify-center px-6 py-8 text-center sm:flex-1 sm:py-6">
                 <p className="font-serif text-4xl font-semibold tabular-nums text-primary md:text-[2.75rem]">
-                  15+
+                  10+
                 </p>
                 <p className="mt-2 font-sans text-[10px] font-bold uppercase tracking-[0.2em] text-on-surface-variant">
                   Anos de exp.

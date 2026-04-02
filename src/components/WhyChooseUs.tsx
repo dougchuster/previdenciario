@@ -44,8 +44,10 @@ export default function WhyChooseUs() {
           <p className="mb-3 font-sans text-[11px] font-semibold uppercase tracking-[0.28em] text-primary-container/90">
             Diferenciais
           </p>
-          <h2 className="font-serif text-3xl leading-tight text-on-surface md:text-4xl lg:text-[2.5rem]">
-            Por que escolher o <span className="italic text-primary-container">Coimbra & Ruas?</span>
+          <h2 className="font-serif text-4xl leading-tight text-on-surface md:text-4xl lg:text-[2.5rem]">
+            Por que escolher o{' '}
+            <br className="sm:hidden" />
+            <span className="italic text-primary-container">Coimbra & Ruas?</span>
           </h2>
         </motion.div>
 
